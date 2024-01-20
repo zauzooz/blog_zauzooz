@@ -6,8 +6,8 @@
 
 ## MY LEARNING NOTE
 
-- [Networking Note](network_engineer_dream/index.md)
-- [Ethical Hacking Note](ethical_hacking/index.md)
+- [Networking Note](/network_engineer_dream/index.md)
+- [Ethical Hacking Note](/ethical_hacking/index.md)
 
 ## PROJECT
 
