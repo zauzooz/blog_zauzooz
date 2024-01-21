@@ -1,6 +1,6 @@
 # IP ADDRESS VÀ SUBNET MASK
 
-Địa chỉ IP là một dãy số $x.y.z.t$ với $x , y, z, t \in [0,..,255]$ và $x, y, z, t \in \mathbb{N}$ là một giá trị định danh duy nhất ở mỗi máy để có thể giao tiếp trên Internet, là địa chỉ thuộc [tầng IP trong mô hình OSI](/network_engineer_dream/2_OSI_model_and_Protocol/index.md). Ví dụ địa chỉ 192.168.1.12 là một địa chỉ IP. Thực tế mỗi $x$, $y$, $z$ hay $t$ là có thể được biễu diễn bằng một dãy số nhị phân có độ dài là 8 bit:
+Địa chỉ IP là một dãy số $x.y.z.t$ với $x , y, z, t \in [0,..,255]$ và $x, y, z, t \in \mathbb{N}$ là một giá trị định danh duy nhất ở mỗi máy để có thể giao tiếp trên Internet, là địa chỉ thuộc [tầng IP trong mô hình OSI](../../network_engineer_dream/2_OSI_model_and_Protocol/index.md). Ví dụ địa chỉ 192.168.1.12 là một địa chỉ IP. Thực tế mỗi $x$, $y$, $z$ hay $t$ là có thể được biễu diễn bằng một dãy số nhị phân có độ dài là 8 bit:
 
 ![Decical to Binary](/network_engineer_dream/4_1_IPaddress_Netmask/ip_address.png)
 
