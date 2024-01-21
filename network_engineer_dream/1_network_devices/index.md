@@ -2,13 +2,13 @@
 
 ## Hub
 
-Hub là một thiết bị hoạt động ở [tầng 1 (Layer 1) trong mô hình OSI](2_OSI_model_and_Protocol.md).
+Hub là một thiết bị hoạt động ở [tầng 1 (Layer 1) trong mô hình OSI](/network_engineer_dream/2_OSI_model_and_Protocol/index.md).
 
 Cơ chế của Hub khá đơn giản, khi nhận một frame ở một cổng, sẽ thực hiện gửi frame đó ra toàn bộ cổng còn lại (trừ cổng mà frame đến).
 
 ## Bridge
 
-Bridge là một thiết bị hoạt động ở [tầng 2 (Layer 2) trong mô hình OSI](2_OSI_model_and_Protocol.md).
+Bridge là một thiết bị hoạt động ở [tầng 2 (Layer 2) trong mô hình OSI](/network_engineer_dream/2_OSI_model_and_Protocol/index.md).
 
 Bride có một thành phần đặc biệt là bảng địa chỉ MAC (MAC address table) giúp nó ghi lại địa chỉ MAC tương ứng với cổng nào. Cơ chế hoạt động của Bride tuân theo 2 nguyên tắc:
 
