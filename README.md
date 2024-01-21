@@ -15,4 +15,4 @@
 
 ## CONTACT
 
-- Email: nnt010802@gmail.com
+- Email: <nnt010802@gmail.com>
