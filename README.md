@@ -1,6 +1,4 @@
-# NGUYỄN NGỌC TÀI - NGUYEN NGOC TAI
-
-![avatar](/_img/flower.jpg)
+# NETWORK ENGINEER
 
 ## CONTACT
 
