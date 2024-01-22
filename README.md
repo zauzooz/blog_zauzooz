@@ -10,12 +10,25 @@
 
 ## PROJECT
 
-|Year|Project Name|
-|:-----|:----|
-|2023  |[MITM attack using Phishing](https://github.com/zauzooz/MITM_attacks_HTTP_HTTPS)|
-|2022  |[Reinforcement Learning based SSH honeypot](https://github.com/zauzooz/RL-based_SSH-honeypot)|
-|2021  |[DDoS detection in Software Defined Network using Shannon Entropy and Information Distance](https://github.com/zauzooz/NT101.N11.ANTT_Project)|
-|2021  |[Multi-Authority Cyphertext-Policy Attribute Based Encryption for Personal Health Report](https://github.com/zauzooz/MA-CP-ABE_for_PHR)|
+[2023] **Man-In-The-Middle attack via Phishing**:
+
+- Thực hiện cuộc tấn công Man-In-The-Middle thông qua phương pháp Phishing. Bằng cách đánh lừa người dùng tải xuống tệp độc hại nhằm thực hiện truy cập trái phép và khai thác điểm yếu của mạng nội bộ từ bên ngoài.
+- Github: [https://github.com/zauzooz/MITM_attacks_HTTP_HTTPS](https://github.com/zauzooz/MITM_attacks_HTTP_HTTPS)
+
+[2022] **Reinforcement Learning based SSH honeypot**:
+
+- Xây dựng một SSH honeypot thông minh có khả năng đưa ra các phản hồi thông mình tùy vào ngữ cảnh.
+- Github: [https://github.com/zauzooz/RL-based_SSH-honeypot](https://github.com/zauzooz/RL-based_SSH-honeypot)
+
+[2021] **DDoS detection in Software Defined Network using Shannon Entropy and Information Distance**:
+
+- Xây dựng phương pháp phát hiện tấn công DDoS vào mô hình mạng Software Define Network.
+- Github: [https://github.com/zauzooz/NT101.N11.ANTT_Project](https://github.com/zauzooz/NT101.N11.ANTT_Project)
+
+[2021] **Multi-Authority Cyphertext-Policy Attribute Based Encryption for Personal Health Report**:
+
+- Mô phỏng cơ chế mã hóa dựa vào thuộc tính (Attribute Based Encryption) ứng dụng vào lưu trữ dữ liệu trên hệ thống đám mây không tin cậy.
+- Github: [(https://github.com/zauzooz/MA-CP-ABE_for_PHR](https://github.com/zauzooz/MA-CP-ABE_for_PHR)
 
 ## RELATED COURSES
 
