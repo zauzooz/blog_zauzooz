@@ -20,31 +20,27 @@ UDP được sử dụng ở các ứng dụng như DNS, VoIP và Streamming med
 
 Session Mutiplexing: một máy trạm có thể có nhiều kết nối mạng với nhiều máy chủ. Đối với giao thức TCP, cần thực hiện [bắt tay ba bước](./TCP/index.md#bắt-tay-3-bước-three-way-handshake) trước khi thực hiện truyền nhận dữ liệu.
 
-Segmented:
+Segmentation and Reassembly:
 
-- Phân đoạn gói tin trở nên vừa với MTU (Maximum Transmission Unit - kích thước tối của một thiết bị mạng).
+- Phân đoạn gói tin trở nên vừa với MTU (Maximum Transmission Unit - kích thước tối của một thiết bị mạng), và các mảnh sẽ được ghép lại thành gói tin hoàn thiện khi đến máy đích.
 - Giao thức TCP hỗ trợ tính năng này, trong khi đó UDP cần giao thức tầng cao hơn để hỗ trợ xử lý.
 
 Full dumplex:
 
--...
+- TCP hỗ trợ full dumplex, giúp cho việc gửi và nhận dữ liệu có thể diễn ra đồng thời từ cả hai phía.
 
 Flow Control:
 
 - TCP có sliding WINDOW sử dụng cơ chế Flow Control thực hiện kiểm soát luồng để tránh gói tin được gửi quá nhanh (nếu như dữ liệu được gửi đến nhanh hơn khả năng xử lý của máy nhận thì máy nhận sẽ vứt gói tin đó và yêu cầu gửi lại).
 - UDP không sử dụng Flow Control. Cần giao thức tầng cao hơn để có được cơ chế này.
 
-Error Control:
+Error Checking and Recovery:
 
--...
-
-Retransmission:
-
--...
+- Sử dụng Checksum để kiểm tra lỗi của gói tin. Nếu segment bị lỗi sẽ bị loại bỏ và sẽ có một yêu cầu gửi lại đến máy gửi.
 
 Conguestion Control:
 
--...
+- TCP sử dụng kiểm soát tắc nghẽn để ngăn ngừa tắc nghẽn mạng bằng cách giảm tốc độ truyền khi mạng bị tắc nghẽn.
 
 Conection Oriented:
 
@@ -53,8 +49,7 @@ Conection Oriented:
 
 Reliability:
 
-- Ở TCP, mỗi gói tin sẽ có có ACK và Seqence number để đảm bảo cơ chế tin cậy bao gồm thứ tự và đầy đủ gói tin.
-- Ở UDP không có cơ chế Reliability, để có được cơ chế này cần giao thức ở tầng cao hơn.
+- TCP cung cấp vận chuyển dữ liệu đảm bảo tất cả các gói tin đến đích và không có lỗi thông qua ACK và Seqence number.
 
 ## PORT
 
