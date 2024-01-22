@@ -28,11 +28,17 @@
 [2021] **Multi-Authority Cyphertext-Policy Attribute Based Encryption for Personal Health Report**:
 
 - Mô phỏng cơ chế mã hóa dựa vào thuộc tính (Attribute Based Encryption) ứng dụng vào lưu trữ dữ liệu trên hệ thống đám mây không tin cậy.
-- Github: [(https://github.com/zauzooz/MA-CP-ABE_for_PHR](https://github.com/zauzooz/MA-CP-ABE_for_PHR)
+- Github: [https://github.com/zauzooz/MA-CP-ABE_for_PHR](https://github.com/zauzooz/MA-CP-ABE_for_PHR)
 
 ## RELATED COURSES
 
 - Update later...
+
+## ACHIEVEMENTS
+
+[2023] Công trình nghiên cứu được đăng tại tạp chí **CTU Journal of Innovation and Sustainable Development** của Đại học Cần Thơ.
+
+- DOI link: <https://doi.org/10.22144/ctujoisd.2023.030>
 
 ## MY LEARNING NOTE
 
