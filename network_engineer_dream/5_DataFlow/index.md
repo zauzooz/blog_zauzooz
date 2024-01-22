@@ -6,6 +6,8 @@ Là một giá trị địa chỉ **duy nhất** được đăng ký trên NIC (
 
 ## Carrier-Sense Multiple Access / Colision Detection (CSMA/CD)
 
+...
+
 ## Broadcast domain, Collision domain
 
 Miền quảng bá (Broadcast domain) : hiểu đởn giản là miền thực hiện gửi broadcast, có thể nằm trong cùng một vùng phân mạng LAN.
