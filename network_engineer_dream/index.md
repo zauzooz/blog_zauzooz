@@ -5,3 +5,4 @@
 - [Địa chỉ IP và netmask](../network_engineer_dream/4_1_IPaddress_Netmask/index.md)
 - [Luồng dữ liệu](../network_engineer_dream/5_DataFlow/index.md)
 - [Thiết kế mạng an toàn](../network_engineer_dream/6_secure_nework_design_principle/index.md)
+- [Các thí nghiệm/thực hành](../network_engineer_dream/experiment/index.md)
