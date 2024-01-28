@@ -3,6 +3,7 @@
 ## CONTACT
 
 - Email: <nnt010802@gmail.com>
+- Linkedin: <https://www.linkedin.com/in/nguyễn-ngọc-tài-707469232/>
 
 ## EDUCATION
 
