@@ -11,6 +11,9 @@ Cấu hình mạng
 - [Luồng dữ liệu](../network_engineer_dream/5_DataFlow/index.md)
 - [Switching](../network_engineer_dream/4_3_Switching/index.md)
 - [Routing](../network_engineer_dream/4_4_Routing/index.md)
+- [NAT](../network_engineer_dream/4_5_NAT/index.md)
+- [ACL](../network_engineer_dream/4_7_ACL/index.md)
+- [MPLS](../network_engineer_dream/4_6_MPLS/index.md)
 
 Thiết kế mạng
 
