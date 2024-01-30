@@ -8,7 +8,6 @@ Dựa vào [[2]](https://www.cisco.com/c/en/us/support/docs/ip/network-address-t
 
 1. Xác định NAT inside interface và NAT outside interface.
 2. Xác định mục đích của việc sử dụng NAT:
-    
     - Cho phép người dùng bên trong mạng nội bộ truy cập ra bên ngoài internet?
     - Cho phép người dùng bên ngoài truy cập vào tài nguyên bên trong mạng nội bộ (Web Server).
     - Chuyển hướng luồng TCP đến TCP port hay địa chỉ TCP khác.
