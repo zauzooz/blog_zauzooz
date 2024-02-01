@@ -26,17 +26,22 @@
 
 **YC2**: Bổ sung ACL mới vào ACL nhằm chặn việc ping từ máy trong mạng 192.168.1.0/24 không kết nối được đến Fshare Server.
 
+**YC3**: Xóa bản ACL mà cấm ping đền Fshare Server.
+
+**YC4**: Xóa luôn ACL đã tạo.
+
 ## YC1
 
 Bước 1: Thiết lập ACL có ACL number là 102 [[2]](https://www.ciscopress.com/articles/article.asp?p=1697887), cấu hình Extend ACL tham khảo tại [[1]](https://www.cisco.com/c/en/us/support/docs/security/ios-firewall/23602-confaccesslists.html#toc-hId-1966246354)
 
 ```
 access-list 102 deny tcp 192.168.1.0 0.0.0.255 host 192.168.2.18 eq ftp
-access-list 102 deny tcp 192.168.1.0 0.0.0.255 host 192.168.2.18 eq 69
 access-list 102 permit ip any any
 ```
 
 Kiểm tra access list bằng `show access-list`.
+
+![Alt text](./img/acl_yc1.png)
 
 Bước 2: chỉ định interface Gi0/0 chặn kết nối từ bên trong.
 
@@ -47,8 +52,51 @@ ip access-group 102 in
 
 ## YC2
 
+Phương pháp để sửa đối ACL đọc tại [[1]](https://www.cisco.com/c/en/us/support/docs/security/ios-firewall/23602-confaccesslists.html#toc-hId-1482701489).
+
+Kiểm tra ping đến Web server và FTP server trước khi thêm rule mới. Như đã thấy mặc dù không thực hiện giao thức FTP được nhưng máy trong mạng nội bộ vẫn còn ping được đến FTP server.
+
+![Alt text](./img/test_ping_yc1.png)
+
+```
+ip access-list extended 102
+15 deny icmp 192.168.1.0 0.0.0.255 host 192.168.2.18
+```
+
+Dùng `show access-lists` để kiểm tra.
+
+![Alt text](./img/acl_yc2.png)
+
+Kiểm tra ping đến Web server và FTP server sau khi thêm rule mới. Như đã thầy máy trong mạng nội bộ không còn ping đến FTP server nữa.
+
+![Alt text](./img/test_ping_yc2.png)
+
+## YC3
+
+![Alt text](./img/test_del_show_1.png)
+
+Dùng các lệnh sau để xóa rule thứ 20 của ACL là rule cần xóa.
+
+```
+ip access-list extended 102
+no 20 deny icmp 192.168.1.0 0.0.0.255 host 192.168.2.18
+end
+```
+
+Dùng `show access-lists` để kiểm tra ACL:
+
+![Alt text](./img/test_del_show_2.png)
+
+## YC4
+
+Dùng `no access-list 102` để xóa bỏ ACL 102:
+
+Dùng `show access-lists` để kiểm tra ACL:
+
+![Alt text](./img/yc4_show.png)
+
 ## REFERENCE
 
-[1] <https://www.cisco.com/c/en/us/support/docs/security/ios-firewall/23602-confaccesslists.html#toc-hId-1966246354>
+[1] <https://www.cisco.com/c/en/us/support/docs/security/ios-firewall/23602-confaccesslists.html>
 
 [2] <https://www.ciscopress.com/articles/article.asp?p=1697887>
