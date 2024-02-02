@@ -26,3 +26,5 @@ B1: Thực hiện cấu hình các interface như sau, dùng địa chỉ mạng
 |Internal Server (Zone B)|Fa0|192.168.1.2|255.255.255.0|
 
 ## REFERENCE
+
+[1] <https://www.cisco.com/c/en/us/support/docs/ip/network-address-translation-nat/13772-12.html>
