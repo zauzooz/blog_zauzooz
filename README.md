@@ -9,7 +9,13 @@
 
 - 4th-student at University Information Technology.
 
-## PROJECT
+## MY LEARNING NOTE
+
+- [Networking Note](/network_engineer_dream/index.md)
+- [Security Fundamental Note](/security_fundamental/index.md)
+- [Ethical Hacking Note](/ethical_hacking/index.md)
+
+## PROJECTS
 
 [2023] **Data Loss Prevention Solution**
 
@@ -45,9 +51,3 @@
 [2023] Công trình nghiên cứu được đăng tại tạp chí **CTU Journal of Innovation and Sustainable Development** của Đại học Cần Thơ.
 
 - DOI link: <https://doi.org/10.22144/ctujoisd.2023.030>
-
-## MY LEARNING NOTE
-
-- [Networking Note](/network_engineer_dream/index.md)
-- [Security Fundamental Note](/security_fundamental/index.md)
-- [Ethical Hacking Note](/ethical_hacking/index.md)
