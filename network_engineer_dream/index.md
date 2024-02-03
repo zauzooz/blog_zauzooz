@@ -23,9 +23,11 @@
 
 - Quản lý user:
     - Work Group
+    - Domain
     - Active Directory
+    - RODC
 
-### **Dịch vụ mạng**:
+### **Dịch vụ mạng**
 
 - DHCP
 - DNS

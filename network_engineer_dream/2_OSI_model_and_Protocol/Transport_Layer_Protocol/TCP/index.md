@@ -36,3 +36,5 @@ Options:
 Data: Dữ liệu ở tầng cao hơn (tầng ứng dụng).
 
 ## QUY TRÌNH BẮT TAY 3 BƯỚC (THREE-WAY HANDSHAKE)
+
+## TCP ACK, WINDOW SIZE AND SLIDING WINDOW

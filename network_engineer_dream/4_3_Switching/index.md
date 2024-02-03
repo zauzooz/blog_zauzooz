@@ -1,12 +1,18 @@
 # Switching
 
+## VLAN
+
+...
+
 ## Access, Trunk
 
-Các cổng trunk (trunk ports) là các cổng mà có thể mang các luồng mạng thuộc các VLAN khác nhau, giúp các máy cùng VLAN nhưng khác switch có thể giao tiếp với nhau.
+Các cổng trunk (trunk ports) là các cổng mà có thể mang các luồng mạng thuộc các VLAN khác nhau, giúp các máy cùng VLAN nhưng khác switch có thể giao tiếp với nhau, có hai chuẩn đóng gói Trunk là IEEE 802.1Q và Inter-Switch Link Protocol (ISL) [[5]](https://www.cisco.com/c/en/us/support/docs/lan-switching/8021q/24067-195.html).
+
+![](./img/vlan_trunking.png)
 
 ## Dynamic Trunking Protocol (DTP)
 
-DTP là giao thức dùng để tạo một liên kết trunk giữa 2 switch và cũng như đóng gói hay đánh dấu bằng 802.1Q hoặc ISL. Giao thức hoạt động ở tầng 2 trong mô hình OSI. DTP là giao thức của các máy Cisco [[1]](https://www.geeksforgeeks.org/dynamic-trunking-protocol-dtp/).
+DTP là giao thức dùng để tạo một liên kết trunk giữa 2 switch và cũng như đóng gói hay đánh dấu bằng 802.1Q hoặc ISL [[5]](https://www.cisco.com/c/en/us/support/docs/lan-switching/8021q/24067-195.html). Giao thức hoạt động ở tầng 2 trong mô hình OSI. DTP là giao thức của các máy Cisco [[1]](https://www.geeksforgeeks.org/dynamic-trunking-protocol-dtp/).
 
 |                 |Dynamic Auto|Dynamic Desirable|Trunk               |Access      |
 |:---------------:|:----------:|:---------------:|:------------------:|:----------:|
@@ -27,6 +33,16 @@ Cấu hình VTP cisco tại [[3]](https://www.cisco.com/c/en/us/support/docs/lan
 
 ## Spanning Tree Protocol (STP)
 
+...
+
+## MultiProtocol Label Switching (MPLS)
+
+...
+
+## 802.1Q
+
+...
+
 ## Tham khảo
 
 [1] <https://www.geeksforgeeks.org/dynamic-trunking-protocol-dtp/>
@@ -36,3 +52,5 @@ Cấu hình VTP cisco tại [[3]](https://www.cisco.com/c/en/us/support/docs/lan
 [3] <https://www.cisco.com/c/en/us/support/docs/lan-switching/vtp/98154-conf-vlan.html>
 
 [4] <https://www.geeksforgeeks.org/vlan-trunking-protocol-vtp/>
+
+[5] <https://www.cisco.com/c/en/us/support/docs/lan-switching/8021q/24067-195.html>
