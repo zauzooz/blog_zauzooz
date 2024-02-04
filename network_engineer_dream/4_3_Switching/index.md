@@ -8,7 +8,7 @@
 
 Các cổng trunk (trunk ports) là các cổng mà có thể mang các luồng mạng thuộc các VLAN khác nhau, giúp các máy cùng VLAN nhưng khác switch có thể giao tiếp với nhau, có hai chuẩn đóng gói Trunk là IEEE 802.1Q và Inter-Switch Link Protocol (ISL) [[5]](https://www.cisco.com/c/en/us/support/docs/lan-switching/8021q/24067-195.html).
 
-![](./img/vlan_trunking.png)
+![Trunk link](./img/vlan_trunking.png)
 
 ## Dynamic Trunking Protocol (DTP)
 
@@ -43,6 +43,10 @@ Cấu hình VTP cisco tại [[3]](https://www.cisco.com/c/en/us/support/docs/lan
 
 ...
 
+## Inter VLAN
+
+Thông thường VLAN ở Layer 2 cho phép tách biệt hai VLAN với nhau khiến chúng không thể giao tiếp với nhau. Inter VLAN được sử dụng để chuyển gói tin từ VLAN này sang VLAN khác. Có ba loại inter-VLAN routing bao gồm Legacy Inter-VLAN routing, Router-on-Stick và Layer 3 switching [[5]](https://www.ciscopress.com/articles/article.asp?p=3089357&seqNum=4).
+
 ## Tham khảo
 
 [1] <https://www.geeksforgeeks.org/dynamic-trunking-protocol-dtp/>
@@ -54,3 +58,5 @@ Cấu hình VTP cisco tại [[3]](https://www.cisco.com/c/en/us/support/docs/lan
 [4] <https://www.geeksforgeeks.org/vlan-trunking-protocol-vtp/>
 
 [5] <https://www.cisco.com/c/en/us/support/docs/lan-switching/8021q/24067-195.html>
+
+[6] <https://www.ciscopress.com/articles/article.asp?p=3089357&seqNum=4>
