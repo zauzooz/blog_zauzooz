@@ -10,6 +10,10 @@ Các cổng trunk (trunk ports) là các cổng mà có thể mang các luồng 
 
 ![Trunk link](./img/vlan_trunking.png)
 
+## 802.1Q
+
+...
+
 ## Dynamic Trunking Protocol (DTP)
 
 DTP là giao thức dùng để tạo một liên kết trunk giữa 2 switch và cũng như đóng gói hay đánh dấu bằng 802.1Q hoặc ISL [[5]](https://www.cisco.com/c/en/us/support/docs/lan-switching/8021q/24067-195.html). Giao thức hoạt động ở tầng 2 trong mô hình OSI. DTP là giao thức của các máy Cisco [[1]](https://www.geeksforgeeks.org/dynamic-trunking-protocol-dtp/).
@@ -37,11 +41,7 @@ Cấu hình VTP cisco tại [[3]](https://www.cisco.com/c/en/us/support/docs/lan
 
 ## MultiProtocol Label Switching (MPLS)
 
-...
-
-## 802.1Q
-
-...
+MPLS là một kỹ thuật để tăng tốc kết nối mạng [[8]](https://www.cloudflare.com/learning/network-layer/what-is-mpls/). MPLS thực hiện định tuyến một con đường ngắn nhất dựa trên "nhãn" hơn là [dựa trên địa chỉ IP như thông thường](../4_4_Routing/index.md). Các tổ chức sử dụng công nghệ này khi họ có nhiều chi nhánh khác trong nước hay ngoài nước để truy cập vào cơ sở dữ liệu hay ứng dụng của trụ sở chính hay của nhánh [[7]](https://www.paloaltonetworks.com/cyberpedia/mpls-what-is-multiprotocol-label-switching).
 
 ## Inter VLAN
 
@@ -60,3 +60,7 @@ Thông thường VLAN ở Layer 2 cho phép tách biệt hai VLAN với nhau khi
 [5] <https://www.cisco.com/c/en/us/support/docs/lan-switching/8021q/24067-195.html>
 
 [6] <https://www.ciscopress.com/articles/article.asp?p=3089357&seqNum=4>
+
+[7] <https://www.paloaltonetworks.com/cyberpedia/mpls-what-is-multiprotocol-label-switching>
+
+[8] <https://www.cloudflare.com/learning/network-layer/what-is-mpls/>
