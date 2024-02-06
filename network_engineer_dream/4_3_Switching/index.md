@@ -37,9 +37,26 @@ Cấu hình VTP cisco tại [[3]](https://www.cisco.com/c/en/us/support/docs/lan
 
 ## Spanning Tree Protocol (STP)
 
-...
+Giao thức STP đảm bảo sẽ không có loop nào xảy ra trong mạng, loop có thể gây chết mạng của bạn [[10]](https://www.cisco.com/c/en/us/td/docs/routers/access/3200/software/wireless/SpanningTree.html).
 
-## MultiProtocol Label Switching (MPLS)
+Các switch trong cùng một mạng cần được kích hoạt STP trước khi chúng chạy thuật toán spanning tree để chúng có thể xác định chính xác switch nào sẽ được chọn làm “root bridge”. Root bridge được chỉ định này sẽ chịu trách nhiệm gửi các configuration bridge protocol data units (BPDU) cùng với các thông tin khác đến các switch kết nối trực tiếp với nó, từ đó chuyển tiếp các BPDU đến các switch lân cận của chúng. Mỗi switch có một giá trị ưu tiên ID cầu nối (BID), là sự kết hợp giữa giá trị ưu tiên (mặc định 32768) và địa chỉ MAC của chính switch. Switch có BID thấp nhất sẽ trở thành root bridge [[11]](https://documentation.meraki.com/MS/Port_and_VLAN_Configuration/Spanning_Tree_Protocol_(STP)_Overview).
+
+Các trạng thái của Spanning-Tree Interface, các trạng thái được liệt kê theo thứ tự [[10]](https://www.cisco.com/c/en/us/td/docs/routers/access/3200/software/wireless/SpanningTree.html), [[11]](https://documentation.meraki.com/MS/Port_and_VLAN_Configuration/Spanning_Tree_Protocol_(STP)_Overview):
+
+- **Blocking** - khi một thiết bị kết nối vào, port sẽ ở trạng thái block. Ở trạng thái block interface *không tham gia vào chuyển tiếp frame*.
+- **Listeining** - Trạng thái chuyển tiếp sau trạng thái **blocking**, trong đó spanning tree xác định rằng interface này sẵn sàng tham gia vào chuyển tiếp frame.
+- **Learning** - Interface chuẩn bị để tham gia chuyển tiếp frame.
+- **Forwarding** - Interface sẽ chuyển tiếp gói tin.
+- **Disabled** - Interface không tham gia vào spanning tree vì port đang tắt nguồn, không có liên kết trên port đó hoặc không có spanning tree nào đang chạy trên port.
+
+Các mẫu cấu hình STP xem tại [[10]](https://www.cisco.com/c/en/us/td/docs/routers/access/3200/software/wireless/SpanningTree.html#wp1048829), bao gồm:
+
+- Root Device - không VLAN
+- Non Root Bridge - không VLAN
+- Root Device - VLANs
+- Non Root Bridge - VLANs
+
+## Multi-Protocol Label Switching (MPLS)
 
 MPLS là một kỹ thuật để tăng tốc kết nối mạng [[8]](https://www.cloudflare.com/learning/network-layer/what-is-mpls/). MPLS thực hiện định tuyến một con đường ngắn nhất dựa trên "nhãn" hơn là [dựa trên địa chỉ IP như thông thường](../4_4_Routing/index.md). Các tổ chức sử dụng công nghệ này khi họ có nhiều chi nhánh khác trong nước hay ngoài nước để truy cập vào cơ sở dữ liệu hay ứng dụng của trụ sở chính hay của nhánh [[7]](https://www.paloaltonetworks.com/cyberpedia/mpls-what-is-multiprotocol-label-switching).
 
@@ -68,3 +85,7 @@ Thông thường VLAN ở Layer 2 cho phép tách biệt hai VLAN với nhau khi
 [8] <https://www.cloudflare.com/learning/network-layer/what-is-mpls/>
 
 [9] <https://www.cisco.com/c/en/us/td/docs/ios-xml/ios/mp_ldp/configuration/xe-16/mp-ldp-xe-16-book/mp-ldp.html>
+
+[10] <https://www.cisco.com/c/en/us/td/docs/routers/access/3200/software/wireless/SpanningTree.html>
+
+[11] <https://documentation.meraki.com/MS/Port_and_VLAN_Configuration/Spanning_Tree_Protocol_(STP)_Overview>
