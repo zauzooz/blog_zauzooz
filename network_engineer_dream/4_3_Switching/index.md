@@ -43,6 +43,8 @@ Cấu hình VTP cisco tại [[3]](https://www.cisco.com/c/en/us/support/docs/lan
 
 MPLS là một kỹ thuật để tăng tốc kết nối mạng [[8]](https://www.cloudflare.com/learning/network-layer/what-is-mpls/). MPLS thực hiện định tuyến một con đường ngắn nhất dựa trên "nhãn" hơn là [dựa trên địa chỉ IP như thông thường](../4_4_Routing/index.md). Các tổ chức sử dụng công nghệ này khi họ có nhiều chi nhánh khác trong nước hay ngoài nước để truy cập vào cơ sở dữ liệu hay ứng dụng của trụ sở chính hay của nhánh [[7]](https://www.paloaltonetworks.com/cyberpedia/mpls-what-is-multiprotocol-label-switching).
 
+MPLS Label Distribution Protocol (LDP) cung cấp phương tiện cho các LSR (label switch router) để yêu cầu, phân phối và phát hành thông tin ràng buộc tiền tố nhãn cho các thiết bị ngang hàng trong mạng [[9]](https://www.cisco.com/c/en/us/td/docs/ios-xml/ios/mp_ldp/configuration/xe-16/mp-ldp-xe-16-book/mp-ldp.html). Cụ thể LDP sẽ được dùng để xây dựng bảng Forwarding Table ở mỗi router (giống như cách OSPF dùng để xây dựng bảng định tuyến).
+
 ## Inter VLAN
 
 Thông thường VLAN ở Layer 2 cho phép tách biệt hai VLAN với nhau khiến chúng không thể giao tiếp với nhau. Inter VLAN được sử dụng để chuyển gói tin từ VLAN này sang VLAN khác. Có ba loại inter-VLAN routing bao gồm Legacy Inter-VLAN routing, Router-on-Stick và Layer 3 switching [[5]](https://www.ciscopress.com/articles/article.asp?p=3089357&seqNum=4).
@@ -64,3 +66,5 @@ Thông thường VLAN ở Layer 2 cho phép tách biệt hai VLAN với nhau khi
 [7] <https://www.paloaltonetworks.com/cyberpedia/mpls-what-is-multiprotocol-label-switching>
 
 [8] <https://www.cloudflare.com/learning/network-layer/what-is-mpls/>
+
+[9] <https://www.cisco.com/c/en/us/td/docs/ios-xml/ios/mp_ldp/configuration/xe-16/mp-ldp-xe-16-book/mp-ldp.html>
