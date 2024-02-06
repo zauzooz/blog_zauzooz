@@ -8,3 +8,7 @@ Lab cấu hình:
 - [Cấu hình Static NAT](./NAT_static/index.md)
 - [Cấu hình Dynamic NAT](./NAT_dynamic/index.md)
 - [Cấu hình NAT tổng hợp](./NAT_config/index.md)
+- [Cấu hình MPLS](./MPLS_config/index.md)
+- [Cấu hình VPN](./VPN_config/index.md)
+- [Cấu hình tính sẵn sàng cao](./Highavailability/index.md)
+- [Cấu hình mạng có Access Point](./Wireless_802.1x/index.md)
