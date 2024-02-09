@@ -1,5 +1,7 @@
 # SPANNING TREE PROTOCOL IN DETAIL
 
+## SPANNING TREE PROTOCOL OVERVIEW
+
 Giao thức STP chạy trên các bridge và switch của tuân thủ theo chuẩn 802.1D, giúp năng chặn loop xảy ra trong mạng cũng như là tạo ra một liên kết dự phòng [[3]](https://www.cisco.com/c/en/us/support/docs/lan-switching/spanning-tree-protocol/5234-5.html).
 
 ## VERSION OF SPANNING TREE
@@ -33,15 +35,18 @@ BPDU chứa các thông tin về bridge gửi và cổng của nó, bao gồm đ
 
 ## ELECTION MECHANISM - CONVERGENCE
 
-các thiết bị lớp 2 tham gia vào STP thu thập thông tin về các thiết bị bridge/switch khác trong mạng bằng cách trao đổi các thông điệp BPDU. Việc trao đổi thông điệp này nhằm thực hiện mục đích:
+Các thiết bị lớp 2 tham gia vào STP thu thập thông tin về các thiết bị bridge/switch khác trong mạng bằng cách trao đổi các thông điệp BPDU. Việc trao đổi thông điệp này nhằm thực hiện mục đích:
 
-- Chọn ra Spanning Tree root cho mỗi Spanning Tree instance.
+- Chọn ra spanning-tree root cho mỗi spanning-tree instance.
 - Chọn ra designated bridge cho mỗi phân đoạn mạng VLAN.
 - Loại bỏ các loop trong mạng bằng cách cho cổng kể nối với liên kết dự phòng/dư thừa vào trạng thái Blocking.
 
-Switch có priority cao nhất (có giá trị priority nhỏ nhất) sẽ được đề cử làm root bridge. Với các bridge được cấu hình priority mặc định là 32768, thì bridge có địa chỉ MAC nhỏ nhất sẽ được đề cử làm root bridge.
+Quy trình bầu chọn STP diễn ra như sau [[2]](https://documentation.meraki.com/MS/Port_and_VLAN_Configuration/Spanning_Tree_Protocol_(STP)_Overview):
 
-Tham khảo tại [[1]](https://www.cisco.com/c/en/us/td/docs/routers/access/3200/software/wireless/SpanningTree.html#wp1040301).
+- Một switch port nhận các BPDU vượt trội (dựa vào Bridge ID) từ các switch khác và xác định đây là root switch. Switch có priority (Bridge ID) cao nhất (có giá trị priority nhỏ nhất) sẽ được đề cử làm root bridge. Nếu các bridge đều được cấu hình priority mặc định là 32768, thì bridge có địa chỉ MAC nhỏ nhất sẽ được đề cử làm root bridge [[1]](https://www.cisco.com/c/en/us/td/docs/routers/access/3200/software/wireless/SpanningTree.html#wp1040301).
+- Port có path cost nhỏ nhất ở các switch khác root bridge sẽ được bầu chọn là root port.
+- Nếu path cost giống nhau, root port được chọn sẽ dựa theo Bridge ID nhỏ nhất.
+- Nếu Bridge ID lại giống nhau (thông thường có cùng một switch), sẽ chọn port có giá trị vật lý thấp nhất là root port.
 
 ## BRIDGE ID, PORT PRIORITY, PATH COST
 
@@ -55,7 +60,20 @@ Khi 2 port là một phần của loop, port priority và past cost sẽ xác đ
 
 ## ROOT PORT, DESIGNATE PORT AND ALTERNATE PORT
 
-...
+Một số vai trò của port [[2]](https://documentation.meraki.com/MS/Port_and_VLAN_Configuration/Spanning_Tree_Protocol_(STP)_Overview)
+
+- **Root port**: port trên non-root bridge có giá trị path cost ít nhất. Path cost ít nhất tương đương với con đường tốt nhất đến root-bridge.
+- **Designated port**: port trên các  root và designated switch. Các port trên root-bridge sẽ là designated port.
+- **Block port**: các port còn lại đến switch sẽ ở trạng thái Blocking. Access port đến các máy trạm hay PC thì không ảnh hưởng.
+
+Trong RSTP, block port được chia làm 2 [[2]](https://documentation.meraki.com/MS/Port_and_VLAN_Configuration/Spanning_Tree_Protocol_(STP)_Overview):
+
+- **Alternate port**: nhận BPDU từ các switch khác nhưng vẫn duy trì trạng thái Blocking. Vi dụ như một switch có 2 đường đến root bridge, thì sẽ bầu một port là root port, còn một port là alternated port.
+- **Backup port**: nhận BPDU từ chính nó nhưng vẫn duy trì trạng thái Blocking. Ví dụ switch kết nối với đến 2 switch khác nhau thì một port sẽ được bầu là root, port còn lại sẽ là block.
+
+![alt text](./img/image.png)
+
+Hình xem tại [[2]](https://documentation.meraki.com/MS/Port_and_VLAN_Configuration/Spanning_Tree_Protocol_(STP)_Overview).
 
 ## PORT STATE
 
