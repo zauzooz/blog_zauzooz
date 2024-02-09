@@ -9,6 +9,7 @@ Lab cấu hình:
 - [Cấu hình Dynamic NAT](./NAT_dynamic/index.md)
 - [Cấu hình NAT tổng hợp](./NAT_config/index.md)
 - [Cấu hình STP](./STP_config/index.md)
+- [Cấu hình IP-helper để một máy thuộc một VLAN gửi DHCP request đến DHCP server nằm ở một VLAN khác](./Service_from_another_VLAN/index.md)
 - [Cấu hình High-Availability](./Highavailability/index.md)
 - [Cấu hình MPLS](./MPLS_config/index.md)
 - [Cấu hình VPN](./VPN_config/index.md)

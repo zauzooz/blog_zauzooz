@@ -25,7 +25,9 @@
     - Work Group
     - Domain
     - Active Directory
-    - RODC
+    - 
+
+- Software Defined Network
 
 ## DỊCH VỤ MẠNG
 
