@@ -46,7 +46,7 @@ Server chỉ bật DHCP để phân phát địa chỉ IP và DNS để phân gi
 
 **Đối với dịch vụ DNS**:
 
-- ...
+- Record A chuyển đổi testdomain.com thành 15.15.15.15.
 
 ### CẤU HÌNH OSPF
 
@@ -105,12 +105,6 @@ interface gi1/0/1
 switchport mode trunk
 interface gi1/0/24
 switchport mode trunk
-```
-
-- Cấu hình IP helper:
-
-```
-
 ```
 
 **Cấu hình STP tại Switch L2**:
