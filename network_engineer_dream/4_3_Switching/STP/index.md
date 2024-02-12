@@ -56,7 +56,7 @@ Khi 2 port là một phần của loop, port priority và past cost sẽ xác đ
 
 ## PORTFAST
 
-...
+Portfast làm cho một switch hoặc trunk port tham gia vào spanning-tree bằng trạng thái Forwarding ngay lập tức mà bỏ qua trạng thái Listening và Learning, có thể sử dụng Portfast trên swich hay các trunk port mà chúng kết nối trực tiếp đến một máy trạm, switch, hoặc server nhằm cho phép chúng kết nối vào mạng ngay lập tức, thay vì chờ đợi port chuyển từ trạng thái Listening, Learning rồi mới đến Forwarding [[5]](https://www.cisco.com/c/en/us/td/docs/switches/lan/catalyst4000/8-2glx/configuration/guide/stp_enha.html#wp1046787).
 
 ## ROOT PORT, DESIGNATE PORT AND ALTERNATE PORT
 
@@ -94,3 +94,5 @@ Các trạng thái của Spanning-Tree Interface (port), các trạng thái đư
 [3] <https://www.cisco.com/c/en/us/support/docs/lan-switching/spanning-tree-protocol/5234-5.html>
 
 [4] <https://www.ciscopress.com/articles/article.asp?p=2832407&seqNum=5>
+
+[5] <https://www.cisco.com/c/en/us/td/docs/switches/lan/catalyst4000/8-2glx/configuration/guide/stp_enha.html>
