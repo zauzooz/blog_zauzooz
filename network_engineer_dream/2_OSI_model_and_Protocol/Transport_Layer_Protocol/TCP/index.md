@@ -42,9 +42,9 @@
 
 (3) CLIENT nhận được gói [SYN, ACK] và biết được SERVER đồng ý khởi tạo kết nối, CLIENT gửi gói [ACK] cho server và kết nối lúc này đã được khởi tạo, hai máy bây giờ có thể trao đổi dữ liệu.
 
-## TCP ACK, WINDOW SIZE AND SLIDING WINDOW
+## SEQUENCE NUMBER AND TCP ACK
 
-...
+![seq number and tcp ack](./img/seq_ack.png)
 
 ## REFERENCE
 
