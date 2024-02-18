@@ -34,6 +34,11 @@ Hiện tại tôi đang tìm kiếm cơ hội để áp dụng những kiến th
 
 ## PROJECTS
 
+[2024] **Network Configuration Note**
+
+- Thực hiện các thí nghiệm cấu hình mạng theo yêu cầu.
+- Liên kết: <https://zauzooz.github.io/blog_zauzooz/network_engineer_dream/experiment/>
+
 [2023] **Data Loss Prevention Solution**
 
 - Thực hiện phân tích, đánh giá và xây dựng giải pháp, chính sách ngăn ngừa mất mát dữ liệu cho doanh nghiệp. Đề xuất mô hình mạng an toàn và cấu hình thử nghiệm.
