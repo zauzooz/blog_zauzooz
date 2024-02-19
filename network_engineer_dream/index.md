@@ -15,6 +15,11 @@
 - [NAT](../network_engineer_dream/4_5_NAT/index.md)
 - [MPLS](../network_engineer_dream/4_3_Switching/index.md#multiprotocol-label-switching-mpls)
 
+## HIGH AVAILABILITY
+
+- [HSRP](./7_1_HSRP/index.md)
+- [Kiến trúc mạng 3 tầng](./7_2_Three-Layer_Network-Architect/index.md)
+
 ## QUẢN LÝ MẠNG
 
 - Quản lý mạng:
