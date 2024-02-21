@@ -30,7 +30,8 @@
     - [Cấu hình Dynamic NAT trong mạng nhiều VLAN](./NAT_VLANs_config/index.md)
 
 - Secure Remote:
-    - [Cấu hình VPN](./VPN_config/index.md)
+    - [Cấu hình Remote Access VPN](./remote_access_VPN_config/index.md)
+    - [Cấu hình Site-to-Site VPN](./site-to-site_VPN_config/index.md)
     - [Cấu hình MPLS](./MPLS_config/index.md)
 
 **Service**:
