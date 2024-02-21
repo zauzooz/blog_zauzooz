@@ -5,15 +5,19 @@
 - [Các thiết bị mạng](../network_engineer_dream/1_network_devices/index.md)
 - [Mô hình OSI](../network_engineer_dream/2_OSI_model_and_Protocol/index.md)
 
-## CẤU HÌNH MẠNG
+## CẤU HÌNH MẠNG CƠ BẢN
 
 - [Địa chỉ IP và netmask](../network_engineer_dream/4_1_IPaddress_Netmask/index.md)
 - [Luồng dữ liệu](../network_engineer_dream/5_DataFlow/index.md)
 - [Switching](../network_engineer_dream/4_3_Switching/index.md)
 - [Routing](../network_engineer_dream/4_4_Routing/index.md)
+
+## SECURITY
+
 - [ACL](../network_engineer_dream/4_7_ACL/index.md)
 - [NAT](../network_engineer_dream/4_5_NAT/index.md)
 - [MPLS](../network_engineer_dream/4_3_Switching/index.md#multiprotocol-label-switching-mpls)
+- [VPN](../network_engineer_dream/4_8_VPN/index.md)
 
 ## HIGH AVAILABILITY
 
