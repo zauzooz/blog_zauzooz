@@ -2,7 +2,12 @@
 
 ![topology](./img/topology.png)
 
-Cấu hình mô hình mạng như hình trên.
+Cấu hình mô hình mạng như hình trên. Với các yêu cầu sau:
+
+- Switch *Distribution 1* là gateway chính chính cho VLAN 10, và gateway phụ cho VLAN 20.
+- Switch *Distribution 2* là gateway chính chính cho VLAN 20, và gateway phụ cho VLAN 10.
+- Đảm bảo nếu một trong 2 gateway gặp sự cố thì các máy vẫn ping đến được server.
+
 
 ## CÁC BƯỚC CẤU HÌNH
 
@@ -13,18 +18,16 @@ Cấu hình mô hình mạng như hình trên.
 |Router|Gi0/0|10.0.100.15|255.255.255.0|10.0.100.1|
 |Router|Gi0/1|10.0.11.5|255.255.255.0|#|
 |Router|Gi0/2|10.0.12.5|255.255.255.0|#|
-|Distribution 1|VLAN 1|10.0.1.2|255.255.255.0|#|
-|Distribution 1|virtual gateway VLAN 1|10.0.1.1|255.255.255.0||
+|Distribution 1|gi1/0/4|10.0.11.6|255.255.255.0|#|
 |Distribution 1|VLAN 10|10.0.10.2|255.255.255.0|#|
 |Distribution 1|virtual gateway VLAN 10|10.0.10.1|255.255.255.0|#|
 |Distribution 1|VLAN 20|10.0.10.2|255.255.255.0|#|
-|Distribution 1|virtual gateway VLAN 20|10.0.20.1|255.255.255.0||
-|Distribution 2|VLAN 1|10.0.1.3|255.255.255.0|#|
-|Distribution 2|virtual gateway VLAN 1|10.0.1.1|255.255.255.0|#|
+|Distribution 1|virtual gateway VLAN 20|10.0.20.1|255.255.255.0|#|
+|Distribution 2|gi1/0/4|10.0.12.6|255.255.255.0|#|
 |Distribution 2|VLAN 10|10.0.10.3|255.255.255.0|#|
-|Distribution 2|virtual gateway VLAN 10|10.0.10.1|255.255.255.0||
-|Distribution 2|VLAN 20|10.0.20.3|255.255.255.0||
-|Distribution 2|virtual gateway VLAN 20|10.0.20.1|255.255.255.0||
+|Distribution 2|virtual gateway VLAN 10|10.0.10.1|255.255.255.0|#|
+|Distribution 2|VLAN 20|10.0.20.3|255.255.255.0|#|
+|Distribution 2|virtual gateway VLAN 20|10.0.20.1|255.255.255.0|#|
 |PC 0|Fa0|10.0.10.5|255.255.255.0|10.0.10.1 (virtual gateway VLAN 10)|
 |PC 1|Fa0|10.0.20.5|255.255.255.0|10.0.20.1 (virtual gateway VLAN 20)|
 |PC 2|Fa0|10.0.10.6|255.255.255.0|10.0.10.1 (virtual gateway VLAN 10)|
@@ -59,16 +62,13 @@ no shut
 exit
 ```
 
-- Cấu hình default-route:
+- Cấu hình static route sao cho Router biết được gói tin thuộc về VLAN 10 đến từ interface kết nối trực tiếp có địa chỉ IP là 10.0.11.6 (gi1/0/4 của *Distribution 1*) và gói tin thuộc VLAN 20 đến từ interface kết nối trực tiếp có địa chỉ IP là 10.0.12.6 (gi1/0/4 của *Distribution 2*):
 
 ```
-
-```
-
-- Cấu hình static route:
-
-```
-
+ip route 10.0.10.0 255.255.255.0 10.0.11.6 10
+ip route 10.0.10.0 255.255.255.0 10.0.12.6 20
+ip route 10.0.20.0 255.255.255.0 10.0.12.6 10
+ip route 10.0.20.0 255.255.255.0 10.0.11.6 20
 ```
 
 **Cấu hình *Distribution 1***:
@@ -125,11 +125,12 @@ ip route 0.0.0.0 0.0.0.0 10.0.11.5
 ```
 interface vlan 10
 standby 10 ip 10.0.10.1
-standby 10 priority 110
+standby 10 priority 105
+standby 10 track gi1/0/4
 exit
 interface vlan 20
 standby 20 ip 10.0.20.1
-standby preempt
+standby 20 preempt
 exit
 ```
 
@@ -199,7 +200,8 @@ standby 10 preempt
 exit
 interface vlan 20
 standby 20 ip 10.0.20.1
-standby 20 priority 110
+standby 20 priority 105
+standby 20 track gi1/0/4
 exit
 ```
 
