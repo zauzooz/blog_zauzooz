@@ -1,4 +1,4 @@
-# SIMPLE SITE-TO-SITE VPN
+# INTRANET SITE-TO-SITE VPN CONFIG
 
 ## CÁC BƯỚC CẤU HÌNH
 
@@ -141,8 +141,8 @@ crypto ipsec transform-set MY_SET esp-aes esp-sha-hmac
 - Tạo access-list (Extend ACL) cho luồng mạng cần được mã hóa (cụ thể là từ các mạng 10.0.10.0/24, 10.0.20.0/24 và 10.0.100.0/24 đến 14.14.14.6):
 
 ```
-access-list 100 permit ip 10.0.10.0 0.0.0.255 12.12.12.6 0.0.0.255
-access-list 100 permit ip 10.0.20.0 0.0.0.255 12.12.12.6 0.0.0.255
+access-list 100 permit ip 10.0.10.0 0.0.0.255 192.168.13.0 0.0.0.255
+access-list 100 permit ip 10.0.20.0 0.0.0.255 192.168.13.0 0.0.0.255
 ```
 
 - Tạo một Crypto Map có tên là "MY_MAP" với sequence number là 10, và chế độ cấu hình ipsec-isakmp:
@@ -188,7 +188,8 @@ crypto ipsec transform-set MY_SET esp-aes esp-sha-hmac
 - Tạo access-list (Extend ACL) cho luồng mạng cần được mã hóa (cụ thể là từ mạng 192.168.10.0/24 đến 14.14.14.0/24)
 
 ```
-access-list 100 permit ip 192.168.13.0 0.0.0.255 14.14.14.0 0.0.0.255
+access-list 100 permit ip 192.168.13.0 0.0.0.255 10.0.10.0 0.0.0.255
+access-list 100 permit ip 192.168.13.0 0.0.0.255 10.0.0.0 0.0.0.255
 ```
 
 - Tạo một Crypto Map có tên là "MY_MAP" với sequence number là 10, và chế độ cấu hình ipsec-isakmp:

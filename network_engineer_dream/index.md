@@ -11,6 +11,7 @@
 - [Luồng dữ liệu](../network_engineer_dream/5_DataFlow/index.md)
 - [Switching](../network_engineer_dream/4_3_Switching/index.md)
 - [Routing](../network_engineer_dream/4_4_Routing/index.md)
+    - [Administrative-Distance](./4_4_Routing/administrative-distance/index.md)
 
 ## SECURITY
 
