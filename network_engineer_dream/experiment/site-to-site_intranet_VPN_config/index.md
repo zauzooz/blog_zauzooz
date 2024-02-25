@@ -1,5 +1,9 @@
 # INTRANET SITE-TO-SITE VPN CONFIG
 
+![topology](./img/s.png)
+
+Thực hiện cấu hình sao cho hai mạng ở site A và B kết nối VPN và có thể giao tiếp với nhau.
+
 ## CÁC BƯỚC CẤU HÌNH
 
 **Địa chỉ IP các máy**:
@@ -110,6 +114,14 @@ no shut
 interface gi0/2
 ip address 15.15.15.5 255.255.255.0
 no shut
+```
+
+- Cấu hình static route:
+
+```
+ip route 10.0.10.0 0.0.0.255 12.12.12.6
+ip route 10.0.20.0 0.0.0.255 12.12.12.6
+ip route 192.168.13.0 0.0.0.255 12.12.12.6
 ```
 
 ## CẤU HÌNH VPN
