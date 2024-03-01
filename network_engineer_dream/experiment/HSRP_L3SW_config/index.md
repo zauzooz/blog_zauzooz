@@ -126,7 +126,7 @@ ip route 0.0.0.0 0.0.0.0 10.0.11.5
 interface vlan 10
 standby 10 ip 10.0.10.1
 standby 10 priority 105
-standby 10 track gi1/0/4
+standby 10 preempt
 exit
 interface vlan 20
 standby 20 ip 10.0.20.1
@@ -201,7 +201,7 @@ exit
 interface vlan 20
 standby 20 ip 10.0.20.1
 standby 20 priority 105
-standby 20 track gi1/0/4
+standby 20 preempt
 exit
 ```
 
