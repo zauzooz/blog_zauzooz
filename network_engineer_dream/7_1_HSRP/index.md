@@ -14,7 +14,7 @@ Hình trên biễu diễn hoạt động HSRP trong mạng có 1 VLAN. Khi cấu
 
 ## MULTIPLE HSRP AND EXAMPLE
 
-Cisco IOS phiên bản 12.2(18)SE trở lên hỗ trợ Multiple HSRP (MHSRP), một phiên bản mở rộng của  HSRP cho phép chia sẻ tải giữa hai hay nhiều nhóm HSRP với nhau. Việc cấu hình MHSRP có thể đạt đến load balancing và sử dụng hai nhay nhiều nhóm dự phòng từ một mạng host đến mạng server.
+Cisco IOS phiên bản 12.2(18)SE trở lên hỗ trợ Multiple HSRP (MHSRP), một phiên bản mở rộng của  HSRP cho phép chia sẻ tải giữa hai hay nhiều nhóm HSRP với nhau. Việc cấu hình MHSRP có thể đạt đến load balancing và sử dụng hai nhay nhiều nhóm dự phòng từ một mạng host đến mạng server [[1]](https://www.cisco.com/c/en/us/td/docs/switches/lan/catalyst3560/software/release/12-2_25_se/configuration/guide/3560scg/swhsrp.pdf).
 
 ![mhsrp](./img/mhsrp_describe.png)
 
@@ -23,3 +23,5 @@ Cisco IOS phiên bản 12.2(18)SE trở lên hỗ trợ Multiple HSRP (MHSRP), m
 [1] <https://www.cisco.com/c/en/us/td/docs/switches/lan/catalyst3560/software/release/12-2_25_se/configuration/guide/3560scg/swhsrp.pdf>
 
 [2] <https://www.cisco.com/c/en/us/support/docs/ip/hot-standby-router-protocol-hsrp/9234-hsrpguidetoc.html>
+
+[3] <https://www.cisco.com/c/en/us/support/docs/ip/hot-standby-router-protocol-hsrp/13781-7.html>
