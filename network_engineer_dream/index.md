@@ -52,7 +52,6 @@
 ## THIẾT KẾ MẠNG
 
 - [Thiết kế mạng an toàn](../network_engineer_dream/6_secure_nework_design_principle/index.md)
-- ...
 
 ## THÍ NGHIỆM
 

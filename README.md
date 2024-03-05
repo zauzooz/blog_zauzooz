@@ -6,7 +6,7 @@ Xin chào, tôi tên là Nguyễn Ngọc Tài, hiện là sinh viên sắp tốt
 
 ## CONTACT
 
-- Email: <nntzauzooz2@gmail.com>
+- Email: <nntzauzooz@gmail.com>
 - Linkedin: <https://www.linkedin.com/in/zauzooz/>
 
 ## SKILLS

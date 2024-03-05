@@ -12,6 +12,9 @@ Các loại kết nối VPN phổ biến [[1]](https://azure.microsoft.com/en-us
 
 - **Site-to-site VPN**: các mạng LAN kết nối với nhau thông qua internet thành một mạng nội bộ riêng tư, chia làm 2 loại là Intranet và Extranet [[1]](https://azure.microsoft.com/en-us/resources/cloud-computing-dictionary/what-is-vpn)
 
+    - **Intranet site-to-site VPN**: thực hiện kết nối nhiều mạng LAN với nhau để tạo thành mạng WAN (Wide Area Network) [[5]](https://www.fortinet.com/resources/cyberglossary/what-is-site-to-site-vpn).
+    - **Extranet site-to-site VPN**: thường được sử dụng cho hai hoặc nhiều công ty mà họ chỉ muốn chia sẻ tài nguyên nhất định [[5]](https://www.fortinet.com/resources/cyberglossary/what-is-site-to-site-vpn)
+
 ## CÁC GIAO THỨC VPN
 
 Một số giao thực thông dụng để thực hiện kết nối VPN như [[1]](https://azure.microsoft.com/en-us/resources/cloud-computing-dictionary/what-is-vpn), [[3]](https://www.geeksforgeeks.org/types-of-virtual-private-network-vpn-and-its-protocols/) OpenVPN, SSTP, IKEv2/IPSec, L2TP/IPSec, PPTP và WireGuard.
@@ -25,3 +28,5 @@ Một số giao thực thông dụng để thực hiện kết nối VPN như [[
 [3] <https://www.geeksforgeeks.org/types-of-virtual-private-network-vpn-and-its-protocols/>
 
 [4] <https://web.archive.org/web/20211231100706/https://www.cisco.com/c/en/us/products/security/vpn-endpoint-security-clients/what-is-vpn.html>
+
+[5] <https://www.fortinet.com/resources/cyberglossary/what-is-site-to-site-vpn>
