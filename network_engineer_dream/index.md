@@ -8,6 +8,10 @@
 ## CẤU HÌNH MẠNG CƠ BẢN
 
 - [Địa chỉ IP và netmask](../network_engineer_dream/4_1_IPaddress_Netmask/index.md)
+    - [Network Classes](../network_engineer_dream/4_1_IPaddress_Netmask/4_1_0_Network_Classes/index.md)
+    - [VLSM](../network_engineer_dream/4_1_IPaddress_Netmask/4_1_1_VLSM/index.md)
+    - [CIDR](../network_engineer_dream/4_1_IPaddress_Netmask/4_1_2_CIDR/index.md)
+    - [Summarization](../network_engineer_dream/4_1_IPaddress_Netmask/4_1_3_Summarization/index.md)
 - [Luồng dữ liệu](../network_engineer_dream/5_DataFlow/index.md)
 - [Switching](../network_engineer_dream/4_3_Switching/index.md)
 - [Routing](../network_engineer_dream/4_4_Routing/index.md)
