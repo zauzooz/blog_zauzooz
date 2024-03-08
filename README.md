@@ -1,9 +1,5 @@
 # NETWORK ENGINEER
 
-## SUMMARY
-
-Xin chào, tôi tên là Nguyễn Ngọc Tài, hiện là sinh viên sắp tốt nghiệp chuyên ngành An Toàn Thông Tin thuộc Trường Đại Học Công Nghệ Thông Tin - Đại Học Quốc Gia Thành Phố Hồ Chí Minh. Trong suốt hành trình học tập của mình, tôi đã trau dồi và tích lũy các nền tảng vững chắc về mạng máy tính và bảo mật.
-
 ## CONTACT
 
 - Email: <nntzauzooz@gmail.com>
