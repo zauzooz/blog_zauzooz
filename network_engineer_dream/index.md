@@ -14,7 +14,13 @@
     - [Summarization](../network_engineer_dream/4_1_IPaddress_Netmask/4_1_3_Summarization/index.md)
 - [Luồng dữ liệu](../network_engineer_dream/5_DataFlow/index.md)
 - [Switching](../network_engineer_dream/4_3_Switching/index.md)
+    - [VTP](../network_engineer_dream/4_3_Switching/VTP/index.md)
+    - [STP](../network_engineer_dream/4_3_Switching/STP/index.md)
 - [Routing](../network_engineer_dream/4_4_Routing/index.md)
+    - [RIP](../network_engineer_dream/4_4_Routing/RIP/index.md)
+    - [OSPF](../network_engineer_dream/4_4_Routing/OSPF/index.md)
+    - [BGP](../network_engineer_dream/4_4_Routing/BGP/index.md)
+    - [EIRGP](../network_engineer_dream/4_4_Routing/EIGRP/index.md)
     - [Administrative-Distance](./4_4_Routing/administrative-distance/index.md)
 
 ## SECURITY
