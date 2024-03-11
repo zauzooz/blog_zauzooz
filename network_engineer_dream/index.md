@@ -55,7 +55,7 @@
 
 - [DHCP](./2_OSI_model_and_Protocol/DHCP/index.md)
 - [DNS](./2_OSI_model_and_Protocol/DNS/index.md)
-- [ISP]()
+- [NTP](./2_OSI_model_and_Protocol/NTP/index.md)
 - HTTP
 - VoIP
 
