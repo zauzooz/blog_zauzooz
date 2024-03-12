@@ -31,7 +31,17 @@ Router biên (Border Router) là các router kết nối với một vùng khác
 
 ## BACKBONE VÀ AREA 0
 
-...
+Nếu cấu hình OSPF nhiều area, **bắt buộc một trong số đó phải là area 0**. Area 0 còn được gọi là backbone.
+
+Backbone phải ở trung tâm của mạng - tức là tất cả các area khác phải kết nối về mặt vật lý đến nó. Lý do là OSPF mong muốn tất cả các area sẽ đưa thông tin định tuyến vào backbone và đến lượt backbone sẽ phổ biến thông tin đó sang các area khác.
+
+![ospf multi area](./img/ospf_multiarea.png)
+
+Trong trường hợp nếu như không có một kết nối vật lý nào trực tiếp nào đến area 0 thì cần thực hiện cấu hình một **liên kết ảo**.
+
+![virtual link ospf](./img/virtual_link_ospf.png)
+
+
 
 ## REFERENCE
 
