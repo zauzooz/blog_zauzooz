@@ -41,8 +41,6 @@ Trong trường hợp nếu như không có một kết nối vật lý nào tr�
 
 ![virtual link ospf](./img/virtual_link_ospf.png)
 
-
-
 ## REFERENCE
 
 [1] <https://www.cisco.com/c/en/us/support/docs/ip/open-shortest-path-first-ospf/7039-1.html>

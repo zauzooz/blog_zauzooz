@@ -7,7 +7,7 @@
 **Routing**:
 
 - [Cấu hình định tuyến one-area-OSPF](./OSPF_routing/index.md)
-- Cấu hình định tuyến multi-area-OSPF
+- [Cấu hình định tuyến multi-area-OSPF](./OSPF_multiple_area/index.md)
 - Cấu hình định tuyến RIP
 - Cấu hình định tuyến EIGRP
 - Nhiều giao thức định tuyến trong một mạng?
