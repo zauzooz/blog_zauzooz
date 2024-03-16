@@ -39,23 +39,25 @@
 
 ## QUẢN LÝ MẠNG
 
-- Quản lý mạng:
-    - SMNP
-    - Syslog
+- [Khái niệm quản lý mạng](./8_Network_Management/concept/index.md)
+- [ICMP](./2_OSI_model_and_Protocol/ICMP/index.md)
+- [SMNP](./8_Network_Management/SNMP/index.md)
+- [SMNP trap](./8_Network_Management/SNMP_trap/index.md)
+- [Syslog](./8_Network_Management/Syslog/index.md)
+- [Netflow](./8_Network_Management/Syslog/index.md)
+- [NTP](./2_OSI_model_and_Protocol/NTP/index.md)
 
-- Quản lý user:
-    - Work Group
-    - Domain
-    - Active Directory
-    - 
+## QUẢN LÝ NGƯỜI DÙNG
 
+- Work Group
+- Domain
+- Active Directory
 - Software Defined Network
 
 ## DỊCH VỤ MẠNG
 
 - [DHCP](./2_OSI_model_and_Protocol/DHCP/index.md)
 - [DNS](./2_OSI_model_and_Protocol/DNS/index.md)
-- [NTP](./2_OSI_model_and_Protocol/NTP/index.md)
 - HTTP
 - VoIP
 
