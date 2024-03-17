@@ -28,7 +28,7 @@ Có 2 loại giao thức quản lý mạng bao gồm *giao thức quản lý m�
 - Trong các giao thức dựa trên sự kiện, các thiết bị mạng tạo và gửi thông báo sự kiện đến hệ thống quản lý bất cứ khi nào đáp ứng các điều kiện hoặc ngưỡng nhất định được xác định trước.
 - Những sự kiện này có thể bao gồm cảnh báo về lỗi thiết bị, suy giảm hiệu suất, vi phạm bảo mật hoặc những thay đổi quan trọng khác trong môi trường mạng.
 - Hệ thống quản lý phản ứng với những sự kiện này bằng cách thực hiện các hành động được xác định trước, chẳng hạn như gửi thông báo cho quản trị viên, kích hoạt phản hồi tự động hoặc ghi lại các sự kiện để phân tích.
-- Ví dụ về các giao thức dựa trên sự kiện bao gồm [SNMP trap](../SNMP_trap/index.md), [Syslog](../Syslog/index.md) và NetFlow/IPFIX để phân tích lưu lượng truy cập và phát hiện sự bất thường.
+- Ví dụ về các giao thức dựa trên sự kiện bao gồm [SNMP trap](../SNMP_trap/index.md), [Syslog](../Syslog/index.md), [NetFlow](../Netflow/index.md) và [IPFIX](../IPFIX/index.md) để phân tích lưu lượng truy cập và phát hiện sự bất thường.
 
 - Điểm mạnh:
 
