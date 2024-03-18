@@ -97,7 +97,15 @@ Cấu hình snmp server trên các router 1 và 2:
 - Tại R1:
 
 ```
+snmp-server community public ro
+snmp-server community private rw
+```
 
+- Tại R2:
+
+```
+snmp-server community public ro
+snmp-server community private rw
 ```
 
 ## REFERENCE
