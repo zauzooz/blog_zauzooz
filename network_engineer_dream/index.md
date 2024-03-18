@@ -37,6 +37,10 @@
 - [Ethernet Channel](./7_3_EthernetChanel/index.md)
 - [Kiến trúc mạng 3 tầng](./7_2_Three-Layer_Network-Architect/index.md)
 
+## THIẾT KẾ MẠNG
+
+- [Thiết kế mạng](./network_design/index.md)
+
 ## QUẢN LÝ MẠNG
 
 - [Khái niệm quản lý mạng](./8_Network_Management/concept/index.md)
