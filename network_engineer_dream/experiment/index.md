@@ -46,3 +46,8 @@
 - [Cấu hình mạng có Access Point](./wireless/index.md)
 - [Cấu hình DHCP trên router](./DHCP_on_router/index.md)
 - [Cấu hình IP-helper để một máy thuộc một VLAN X gửi DHCP request đến DHCP server nằm ở một VLAN Y](./Service_from_another_VLAN/index.md)
+
+**Network management**:
+
+- [Syslog and NTP]
+- [SNMP](./SNMP/index.md)
