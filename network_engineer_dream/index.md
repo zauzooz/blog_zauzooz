@@ -37,6 +37,10 @@
 - [Ethernet Channel](./7_3_EthernetChanel/index.md)
 - [Kiến trúc mạng 3 tầng](./7_2_Three-Layer_Network-Architect/index.md)
 
+## QUẢN LÝ THIẾT BỊ CISCO
+
+- [Cisco Device Management](./9_Managing_Cisco_Device/index.md)
+
 ## THIẾT KẾ MẠNG
 
 - [Thiết kế mạng](./network_design/index.md)
