@@ -29,6 +29,7 @@
 - [NAT](../network_engineer_dream/4_5_NAT/index.md)
 - [MPLS](../network_engineer_dream/4_3_Switching/index.md#multiprotocol-label-switching-mpls)
 - [VPN](../network_engineer_dream/4_8_VPN/index.md)
+    - [IPSec](./4_8_VPN/VPN_IPSec/index.md)
 
 ## HIGH AVAILABILITY
 
