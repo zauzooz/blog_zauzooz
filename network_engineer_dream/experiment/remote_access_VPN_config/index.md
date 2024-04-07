@@ -1,4 +1,4 @@
-# CẤU HÌNH REMOTE-ACCESS-VPN
+# CẤU HÌNH REMOTE-ACCESS-VPN TRÊN CISCO ROUTE
 
 ![topology](./img/topology.png)
 
@@ -17,7 +17,7 @@ Yêu cầu:
 
 |Machine|Interface|IP address|Netmask|Gateway|
 |:------|:--------|:---------|:------|:------|
-|Gateway 1|gi0/0|10.0.1.254|255.255.255.0|#|
+|Gateway 1|fa0/0|10.0.1.254|255.255.255.0|#|
 |Gateway 1|se0/0/0|172.16.0.2|255.255.255.252|#|
 |Core|gi1/0/1|10.0.1.253|255.255.255.0|#|
 |Core|VLAN 10|10.0.10.254|255.255.255.0|#|
@@ -27,7 +27,7 @@ Yêu cầu:
 |ISP|se0/2/0|172.16.0.1|255.255.255.252|#|
 |ISP|se0/2/1|172.16.0.5|255.255.255.252|#|
 |Gateway 2|se0/0/0|172.16.0.6|255.255.255.252|#|
-|Gateway 2|gi0/0|192.168.1.254|255.255.255.0|#|
+|Gateway 2|fa0/0|192.168.1.254|255.255.255.0|#|
 |PC 2|Fa0|192.168.1.5|255.255.255.0|192.168.1.254|
 
 ### Cấu hình định tuyến
@@ -66,27 +66,76 @@ network 0.0.0.0 255.255.255.255 area 0
 
 Tại Gateway 1:
 
-- Đầu tiên cung cấp pool IP sẽ cung cấp cho người dùng VPN và username password cho người dùng:
+- Đầu tiên cung cấp pool IP sẽ cung cấp cho người dùng:
 
 ```
-ip local pool ACCESSVPN 10.0.30.5 10.0.30.10
-username nnt password 1234
+ip local pool IP_POOL 10.0.30.5 10.0.30.15
 ```
 
-- Khai báo tham số IPSec pha 1:
+- Cung cấp Username và Pasword cho người tham gia mạng bằng VPN:
+
+```
+username nguyenngoctai password nntpasswd
+```
+
+- Khai báo phương thức xác thực AAA:
+
+```
+aaa new-model
+aaa authentication login USER_AUTHEN local
+aaa authorization network NET_AUTHOR local # Group name lúc truy cập sẽ là NET_AUTHOR
+```
+
+- Tạo một ISAKMP policy cho Phase 1 của negotiation có sequence number là 10, thuật toán mã hóa là AES, thuật toán băm là SHA, phương thức xác thực là pre-share và Diffe-Hellman group là 1:
 
 ```
 crypto isakmp policy 10
-encryption aes
-hash md5
-authentication pre-share
-group 2
+ encryption aes
+ hash sha
+ authentication pre-share
+ group 1
+```
+
+- Cấu hình group VPN có password là 'grouppasswd' và sử dụng pool IP 'IP_POOL' đã khai báo:
+
+```
+crypto isakmp client configuration group NET_AUTHOR
+ key grouppasswd # password cho group NET_AUTHOR là grouppasswd
+ pool IP_POOL
+```
+
+- Tạo một transform-set có tên là TRANSFORM_SET:
+
+```
+crypto ipsec transform-set TRANSFORM_SET esp-ase esp-sha-hmac
+```
+
+- Tạo dynamic-map:
+
+```
+crypto dynamic-map DynamicVPN 100
+ set transform-set TRANSFORM_SET
+ reverse-route
+```
+
+- Tạo một static-map:
+
+```
+crypto map STATIC_MAP client configuration address response
+crypto map STATIC_MAP client authentication list USER_AUTHEN
+crypto map STATIC_MAP isakmp authorization list NET_AUTHOR
+crypto map STATIC_MAP 20 ipsec-isakmp dynamic DynamicVPN
+```
+
+- Cấu hình Interface áp dụng static-map 'STATIC_MAP':
+
+```
+inteface se0/0/0
+crypto map STATIC_MAP
 ```
 
 ## REFERENCE
 
-[1] <https://www.cisco.com/c/en/us/td/docs/security/firepower/623/fdm/fptd-fdm-config-guide-623/fptd-fdm-ravpn.html>
+[1] <https://hainguyenit.edubit.vn/blog/cau-hinh-vpn-remote-access-tren-router-cisco>
 
-[2] <https://hainguyenit.edubit.vn/blog/cau-hinh-vpn-remote-access-tren-router-cisco>
-
-[3] <https://www.firewall.cx/cisco/cisco-routers/cisco-router-vpn-client.html>
+[2] <https://www.firewall.cx/cisco/cisco-routers/cisco-router-vpn-client.html>
