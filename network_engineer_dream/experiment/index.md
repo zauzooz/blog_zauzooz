@@ -51,3 +51,7 @@
 
 - [Syslog and NTP]
 - [SNMP](./SNMP/index.md)
+
+**TROUBLESHOOTING**:
+
+- [Troubleshooting](./troubleshooting/index.md)
