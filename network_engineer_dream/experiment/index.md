@@ -36,7 +36,9 @@
     - [Cấu hình NAT tổng hợp (Doanh nghiệp có publish web và doanh nghiệp không publish web)](./NAT_config/index.md)
     - [Cấu hình Dynamic NAT trong mạng nhiều VLAN](./NAT_VLANs_config/index.md)
 
-- Secure Remote:
+- Secure Connection:
+    - [DHCP snooping](./DHCP_snooping/index.md)
+    - [Truy cập an toàn đến Router](./security_access_cisco_route/index.md)
     - [Cấu hình Remote Access VPN](./remote_access_VPN_config/index.md)
     - [Cấu hình Site-to-Site Intranet VPN](./site-to-site_intranet_VPN_config/index.md)
     - [Cấu hình MPLS](./MPLS_config/index.md)
