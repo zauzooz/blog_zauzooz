@@ -69,4 +69,4 @@ Hiện tại tôi đang tìm kiếm cơ hội để áp dụng những kiến th
 
 ## RELATED COURSES
 
-- Update later...
+- CCNA: <https://ude.my/UC-18a9fbef-916c-4de7-90e8-2e45ce618e7c>

@@ -35,6 +35,7 @@
 
 - [STP](./4_3_Switching/STP/index.md)
 - [HSRP](./7_1_HSRP/index.md)
+- Switch Stacking and Chassis Aggregation
 - [Ethernet Channel](./7_3_EthernetChanel/index.md)
 - [Kiến trúc mạng 3 tầng](./7_2_Three-Layer_Network-Architect/index.md)
 

@@ -21,8 +21,10 @@
 - [Cấu hình STP có VLAN](./STP_VLAN_config/index.md)
 - [Load balancing Routing bằng định tuyến tĩnh](./load-balancing-using-routers/index.md)
 - [Cấu hình HSRP giữa các Router](./HSRP_Router_config/index.md)
-- [Cấu hình HSRP giữa các L3 switch](./HSRP_L3SW_config/index.md)
-- [Cấu hình MHSRP giữa các L3 switch](./MHSRP_L3SW_config/index.md)
+- [Cấu hình HSRP giữa các L3 switch](./HSRP_L3SW_config/index.md)\
+- [Cấu hình NAT cho HA](./HA_NAT_for_HA/index.md)
+- [Cấu hình NAT Overload cho nhiều ISP](./HA_NAT_Overload_multiple_ISP/index.md)
+- [Dự phòng WAN](./HA_WAN_redundancy/index.md)
 - [Mô hình mạng 3 tầng](./3_Layer_Network/index.md)
 
 **Security**:
