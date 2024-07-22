@@ -34,7 +34,7 @@ Cisco định nghĩa một số thuật ngữ [[?]] NAT:
 
 ## Static NAT
 
-Statis NAT sẽ **chuyển đổi cứng** một địa chỉ riêng thành một địa chỉ công khai [[3]](https://www.cisco.com/c/en/us/td/docs/dcn/nx-os/nexus3548/104x/configuration/interfaces/cisco-nexus-3548-nx-os-interfaces-configuration-guide-104x/m-configruing-static-and-dynamic-nat-translation.html).
+Static NAT sẽ **chuyển đổi cứng** một địa chỉ riêng thành một địa chỉ công khai [[3]](https://www.cisco.com/c/en/us/td/docs/dcn/nx-os/nexus3548/104x/configuration/interfaces/cisco-nexus-3548-nx-os-interfaces-configuration-guide-104x/m-configruing-static-and-dynamic-nat-translation.html).
 
 ## Dynamic NAT, PAT
 

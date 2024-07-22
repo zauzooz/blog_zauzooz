@@ -1,4 +1,4 @@
-# NETWORK NOTE
+# NETWORKING
 
 ## KHÁI NIỆM MẠNG
 
@@ -27,6 +27,7 @@
 
 - [ACL](../network_engineer_dream/4_7_ACL/index.md)
 - [NAT](../network_engineer_dream/4_5_NAT/index.md)
+    - [High Availability for NAT](./4_5_1_HANAT/index.md)
 - [MPLS](../network_engineer_dream/4_3_Switching/index.md#multiprotocol-label-switching-mpls)
 - [VPN](../network_engineer_dream/4_8_VPN/index.md)
     - [IPSec](./4_8_VPN/VPN_IPSec/index.md)

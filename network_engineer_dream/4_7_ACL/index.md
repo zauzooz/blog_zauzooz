@@ -13,6 +13,14 @@ So sánh giữa Standard ACL và Extended ACL [[3]](https://www.ciscopress.com/a
 - Standard ACL: ACL chỉ cho phép hay cấm gói tin dựa trên địa chỉ IP(v4). ACL number cho Standard ACL là 1-99 và 1300-1999 đối với thiết bị Cisco [[4]](https://www.ciscopress.com/articles/article.asp?p=1697887).
 - Extended ACL: ACL cho phép hay cấm gói tin dựa trên địa chỉ IP(v4), giao thức, cổng nguồn và đích của giao thức TCP hoặc UDP,... ACL number cho Extend ACL là 100-199 và 2000-2699 đối với thiết bị Cisco [[4]](https://www.ciscopress.com/articles/article.asp?p=1697887)
 
+Một số lưu ý khi áp dụng Access Control List [[6]](https://community.cisco.com/t5/networking-knowledge-base/cisco-access-control-lists-acl/ta-p/4182349):
+
+1. Áp dụng ACL extend khi ở gần nguồn.
+2. Áp dụng ACL standard khi gần đích.
+3. Xắp xếp các ACL theo thứ tự từ chi tiết nhất đến ít chi tiết nhất.
+4. Tối đa 2 ACL được áp dụng trên một Cisco Interface.
+5. Mỗi ACL chỉ được áp dụng là **in** hoặc **out** mỗi Interface mỗi giao thức lớp 3.
+
 ## REFERENCE
 
 [1] <https://support.huawei.com/enterprise/en/doc/EDOC1100086647>
@@ -24,3 +32,5 @@ So sánh giữa Standard ACL và Extended ACL [[3]](https://www.ciscopress.com/a
 [4] <https://www.ciscopress.com/articles/article.asp?p=1697887>
 
 [5] <https://www.juniper.net/documentation/us/en/software/junos/routing-policy/topics/concept/firewall-filter-overview.html>
+
+[6] <https://community.cisco.com/t5/networking-knowledge-base/cisco-access-control-lists-acl/ta-p/4182349>
