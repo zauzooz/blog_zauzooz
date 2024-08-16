@@ -32,10 +32,8 @@ Hiện tại tôi đang tìm kiếm cơ hội để áp dụng những kiến th
 ## MY LEARNING NOTE
 
 - [Networking Note](./network_engineer_dream/index.md)
-- [Virtualization](./tech/virtualization/index.md)
-- [Security Operation Center](./tech/SOC/index.md)
+- [Technologies](./tech/virtualization/index.md)
 - [Security Fundamental Note](/security_fundamental/index.md)
-- [Ethical Hacking Note](/ethical_hacking/index.md)
 
 ## PROJECTS
 
