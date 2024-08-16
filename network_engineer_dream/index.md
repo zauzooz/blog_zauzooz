@@ -1,5 +1,9 @@
 # NETWORKING
 
+## CÁC THÍ NGHIỆM
+
+- [Các thí nghiệm/thực hành](../network_engineer_dream/experiment/index.md)
+
 ## KHÁI NIỆM MẠNG
 
 - [Các thiết bị mạng](../network_engineer_dream/1_network_devices/index.md)
@@ -38,6 +42,7 @@
 - [HSRP](./7_1_HSRP/index.md)
 - Switch Stacking and Chassis Aggregation
 - [Ethernet Channel](./7_3_EthernetChanel/index.md)
+- [Các thuật toán Load Balancing](./7_4_LoadbalancingAlgo/index.md)
 - [Kiến trúc mạng 3 tầng](./7_2_Three-Layer_Network-Architect/index.md)
 
 ## QUẢN LÝ THIẾT BỊ CISCO
@@ -76,6 +81,3 @@
 
 - [Thiết kế mạng an toàn](../network_engineer_dream/6_secure_nework_design_principle/index.md)
 
-## THÍ NGHIỆM
-
-- [Các thí nghiệm/thực hành](../network_engineer_dream/experiment/index.md)

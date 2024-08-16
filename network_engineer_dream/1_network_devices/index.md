@@ -15,7 +15,7 @@ Bride có một thành phần đặc biệt là bảng địa chỉ MAC (MAC add
 - Nếu một frame có địa chỉ A đến port x của Bridge thì nó sẽ thêm cặp (A, x) nếu cặp này không có trong bảng địa chỉ MAC.
 - Tiếp theo xét địa chỉ đích của frame này là B, nếu trong bảng địa chỉ MAC không có cặp (B, y) nào thì Bridge sẽ thực hiện gửi frame này cho toàn bộ các cổng trừ cổng nhận frame, nếu có cặp (B, y) thì sẽ chỉ gửi frame này đi ra cổng y.
 
-## Switch L2
+## Switch lớp 2
 
 Switch L2 là một thiết bị hoạt động ở [tầng 2 (Layer 2) trong mô hình OSI](../2_OSI_model_and_Protocol/index.md), có vai trò kết nối các máy trạm với nhau tạo thành một mạng LAN.
 
@@ -36,8 +36,8 @@ Là thiết bị mạng hoạt động ở tầng 3 trong mô hình OSI, có vai
 
 ## Wireless Access Point
 
-## Network Interface
+...
 
-## Network Adapter
+## Network Interface Card
 
-## REFERENCE
+...

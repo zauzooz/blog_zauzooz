@@ -6,8 +6,9 @@
 - [Digital Signature](./digital_signature/index.md)
 - [Certificate](./certificate/index.md)
 
-**Security Implementation**:
+**Security Deployment**:
 
+- [Tổng quan về các công nghệ bảo mật](./secure_component_enterpise/index.md)
 - [ACL](../network_engineer_dream/4_7_ACL/index.md)
 - [NAT](../network_engineer_dream/4_5_NAT/index.md)
 - [SSL/TLS](./SSL_TLS/index.md)

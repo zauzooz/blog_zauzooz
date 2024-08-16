@@ -1,3 +1,0 @@
-# CÁC DÒNG SẢN PHẨM CỦA CISCO
-
-## REFERENCE
