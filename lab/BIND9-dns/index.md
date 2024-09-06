@@ -1,6 +1,16 @@
 # BIND9 DNS CHO TRÊN UBUNTU SERVER 20.04 CHO MẠNG NỘI BỘ
 
-## BÀI TOÁN
+## YÊU CẦU
+
+Cho sơ đồ mạng sau:
+
+![](./img/bind9-config.png)
+
+- Đã cấu hình *Router* với Interface WAN (interface kết nối với VMnet8) là `192.168.192.150` và đã có thể Static NAT thành địa chỉ *Web Server*.
+- *Router* và *Web Server* đã thấy được nhau.
+- *PC* có thể browsing đến *Web Server* thông qua địa chỉ IP của interface WAN của *Router*.
+
+**Yêu cầu**: Cấu hình *DNS* server sao cho *PC* có thể phân giải tên miền `zauzooz.vn` thành địa chỉ WAN của Router, giúp có thể truy cập đến trang web của *Web Server* bằng tên miền đó.
 
 ## CẤU HÌNH ĐỊA CHỈ IP TĨNH
 
