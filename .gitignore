@@ -4,4 +4,5 @@
 */*/*/img/.$*.bkp
 */*/*/*/img/.$*.bkp
 lab/*
+!lab/index.md
 !lab/BIND9-dns

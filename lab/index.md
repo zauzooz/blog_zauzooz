@@ -1,0 +1,3 @@
+# LAB
+
+09/06/2024 - [BIND9 DNS CHO TRÊN UBUNTU SERVER 20.04 CHO MẠNG NỘI BỘ](./BIND9-dns/index.md)
