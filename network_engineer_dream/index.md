@@ -66,8 +66,7 @@
 ## QUẢN LÝ NGƯỜI DÙNG
 
 - Work Group
-- Domain
-- Active Directory
+- [Active Directory](./user_manager/active_directory/index.md)
 - Software Defined Network
 
 ## DỊCH VỤ MẠNG
@@ -80,4 +79,3 @@
 ## THIẾT KẾ MẠNG
 
 - [Thiết kế mạng an toàn](../network_engineer_dream/6_secure_nework_design_principle/index.md)
-

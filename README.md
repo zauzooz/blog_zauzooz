@@ -5,6 +5,12 @@
 - Email: <nntzauzooz@gmail.com>
 - Linkedin: <https://www.linkedin.com/in/zauzooz/>
 
+## MY NOTES
+
+- [Networking Note](./network_engineer_dream/index.md)
+- [Technologies](./tech/index.md)
+- [Security Fundamental Note](/security_fundamental/index.md)
+
 ## SKILLS
 
 Tôi hiện tại có những kiến thức cần thiết trong mạng máy tính và bảo mật bao gồm:
@@ -28,12 +34,6 @@ Hiện tại tôi đang tìm kiếm cơ hội để áp dụng những kiến th
 ## EDUCATION
 
 - 4th-student at University Information Technology.
-
-## MY LEARNING NOTE
-
-- [Networking Note](./network_engineer_dream/index.md)
-- [Technologies](./tech/virtualization/index.md)
-- [Security Fundamental Note](/security_fundamental/index.md)
 
 ## PROJECTS
 
