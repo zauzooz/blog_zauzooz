@@ -8,8 +8,8 @@
 ## MY NOTES
 
 - [Networking Note](./network_engineer_dream/index.md)
+- [Infrastructure Learn](./infras/index.md)
 - [Infrastructure Lab](./lab/index.md)
-- [Technologies](./tech/index.md)
 - [Security Fundamental Note](/security_fundamental/index.md)
 
 ## SKILLS
