@@ -1,8 +1,9 @@
-*/img/.$*.bkp
-*/*/.$*.bkp
-*/*/img/.$*.bkp
-*/*/*/img/.$*.bkp
-*/*/*/*/img/.$*.bkp
+# */img/.$*.bkp
+# */*/.$*.bkp
+# */*/img/.$*.bkp
+# */*/*/img/.$*.bkp
+# */*/*/*/img/.$*.bkp
+.$*.bkp
 lab/*
 !lab/index.md
 !lab/BIND9-dns
